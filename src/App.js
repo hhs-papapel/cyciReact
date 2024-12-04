@@ -9,6 +9,8 @@ import Oup1 from './comp/inp/output01'
 import T1J241203 from './comp/test/241203test1/241203join'
 import T1M241203 from './comp/test/241203test1/241203mypage'
 
+import Ax1 from './comp/ax/ax01'
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,8 @@ function App() {
           <Route path={"/T1J241203"} element={<T1J241203 />} />
           
           <Route path={"/T1M241203"} element={<T1M241203 />} />
+
+          <Route path={"/ax1"} element={<Ax1 />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -49,6 +53,9 @@ function Home() {
       <h4>데이터 옮기기</h4>
       <Link to="/inp1">데이터 입력</Link><br/>
       <Link to="/oup1">데이터 출력</Link><br/>
+
+      <h4>Axios</h4>
+      <Link to="/ax1">AXIOS 사용</Link><br/>
 
       <h4>241203과제1</h4>
       <Link to="/T1J241203">회원가입</Link><br/>
